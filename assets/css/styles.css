@@ -1,3 +1,18 @@
+/* убираем возможность скроллить по горизонтали */
+html {
+  overflow-x: hidden;
+}
+
+.chat-collapse .btn {
+  /* чат.svg из assets/img */
+  background: url(../img/чат.svg) round;
+  width: 70px; 
+  height: 70px;
+  border-style: none;
+  border-color: rgb(7,7,7);
+}
+
+
 .bs-icon {
   --bs-icon-size: .75rem;
   display: flex;
@@ -151,8 +166,6 @@ section > div > span:last-child {
   }
 }
 
-div {
-}
 
 @media (max-width: 767px) {
   .chat-collapse {
@@ -232,7 +245,7 @@ div {
 }
 
 @media (max-width: 768px) {
-  .@media (max-width: 768px) .card-header p font-size: 10px; font-weight: bold; p {
+    .card-header p font-size: 10px; font-weight: bold; p {
     font-size: 10px;
     font-weight: bold;
   }
@@ -257,7 +270,7 @@ div {
     position: sticky;
     top: 2rem;
     padding: 0px;
-    width: 21vw;
+    width: 21%;
     max-width: 302px;
   }
 }
@@ -345,21 +358,15 @@ div {
   flex-grow: 1;
 }
 
-@media (min-width: 768px) {
-  .main-content {
-    width: 100vw;
-  }
-}
-
 @media (min-width: 769px) {
   .main-content {
-    width: 79vw;
+    width: 79%;
   }
 }
 
 @media (max-width: 768px) {
   .main-content {
-    width: 100vw;
+    width: 100%;
   }
 }
 
